@@ -16,8 +16,8 @@ class Listener(StarkNetIndexer):
         self.conf = conf
         self.logger = logger
         self.handle_pending_data = self.handle_data
-        self.last_amount = None
-        self.last_buyer = None
+        self.last_amount = 0
+        self.last_buyer = 0
         self.auto_renew = False
         self.sponsor_comm = 0
         self.sponsor_addr = 0
