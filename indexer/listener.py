@@ -150,11 +150,12 @@ class Listener(StarkNetIndexer):
                 "sponsor_comm": self.sponsor_comm,
             },
         )
-        self.auto_renew = False
-        self.sponsor_comm = 0
-        self.sponsor_addr = 0
-        self.last_amount = 0
 
         self.logger.info(
             f"{sale_type}: {domain}, {duration/86400}d for {self.last_amount / 1e18} eth"
         )
+
+        self.auto_renew = False
+        self.sponsor_comm = 0
+        self.sponsor_addr = 0
+        self.last_amount = 0
