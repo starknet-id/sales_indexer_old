@@ -1,0 +1,22 @@
+[contracts]
+naming = "0x05cf267a0af6101667013fc6bd3f6c11116a14cda9b8c4b1198520d59f900b17"
+eth = "0x049D36570D4e46f48e99674bd3fcc84644DdD6b96F7C741B1562B82f9e004dC7"
+referral = "0x055647f8cee4daa6b72703bd11e3494b4575690200d9a853fa74daaf5e040cfe"
+renewal = "0x113ccc82ed68d56879f6d3ec656aa466fa8bc5081786c7dddaac3754216ab82"
+
+[apibara]
+indexer_id = "starknet-id"
+reset_state = false
+starting_block = 396100
+connection_string = "mongodb://apibara:apibara@mongo:27017"
+apibara_stream = "goerli.starknet.a5a.ch:443"
+token="XXXXXXXXXXXXXXXXX"
+
+[watchtower]
+endpoint = "https://api.watchtower.starknet.id/service/add_message"
+app_id = "XXXXXXXXXXXXXXXXX"
+token = "XXXXXXXXXXXXXXXXX"
+[watchtower.types]
+info = "goerli/info"
+warning = "goerli/warning"
+severe = "goerli/severe"
